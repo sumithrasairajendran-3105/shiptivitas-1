@@ -33,7 +33,7 @@ componentDidMount() {
 
   this.dragula = Dragula(containers, {
     moves: el => el.classList.contains('Card'),
-    accepts: (target) =>
+    accepts: (el,target) =>
       target.classList.contains('Swimlane-dragColumn'),
   });
 
